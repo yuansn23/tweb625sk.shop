@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-392819088"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-392819088');
+</script>
+
+    <!-- Event snippet for 注册 conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-392819088/8sAhCOfotPoaEJDjp7sB',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻找真爱 - 交友社交</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        
+        .dark .glass-effect {
+            background-color: rgba(40, 40, 40, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        
+        .floating-animation {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .whatsapp-button {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        
+        .whatsapp-button:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .whatsapp-button button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff4757;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-5px);
+            }
+            60% {
+                transform: translateY(-3px);
+            }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            transition: all 0.3s ease;
+            animation: breathe 2s ease-in-out infinite;
+        }
+        
+        .btn-gradient:hover {
+            background: linear-gradient(45deg, #128C7E, #25D366);
+            transform: translateY(-2px);
+        }
+        
+        .btn-breathe {
+            animation: breathe 2s ease-in-out infinite;
+        }
+        
+        @keyframes breathe {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+        }
+        
+        .square-image {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg">
+    <!-- WhatsApp 固定按钮 -->
+    <div class="whatsapp-button">
+        <button onclick="opensite()" class="relative bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg pulse-animation flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="notification-badge">1</span>
+        </button>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- 头部标题 -->
+        <header class="text-center mb-12 floating-animation">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                寻找真爱
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 font-light">
+                在这个喧嚣的世界中，遇见对的人
+            </p>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <div class="max-w-6xl mx-auto">
+            <!-- 个人介绍卡片 -->
+            <div class="glass-effect dark:bg-gray-800/75 rounded-3xl p-8 mb-12 card-hover">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">
+                            关于我
+                        </h2>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                            为事业打拼多年，如今想找一个合适的伴侣，不需要多么美丽的容貌，适合自己的才是最好的。我喜欢研究美食和旅行，期待与你的相遇。
+                        </p>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                            我希望找到一位志同道合的伴侣，一起探索这个世界的美好。一起去看日出日落，分享彼此的梦想和心事，携手走过生活的每一个阶段。无论是欢笑还是泪水，我想与你一同经历。
+                        </p>
+                        <button onclick="opensite()" class="btn-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            立即联系我
+                        </button>
+                    </div>
+                    <div class="relative">
+                        <img src="img/1.jpg" alt="个人照片" class="rounded-2xl shadow-2xl w-full square-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 照片画廊 -->
+            <div class="glass-effect dark:bg-gray-800/75 rounded-3xl p-8 mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    我的生活
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="card-hover">
+                        <img src="img/2.jpg" alt="生活照片" class="rounded-xl shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <div class="card-hover">
+                        <img src="img/3.jpg" alt="生活照片" class="rounded-xl shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <div class="card-hover">
+                        <img src="img/5.jpg" alt="生活照片"class="rounded-xl shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <div class="card-hover">
+                        <img src="img/4.jpg" alt="生活照片" class="rounded-xl shadow-lg w-full h-48 object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 兴趣爱好 -->
+            <div class="glass-effect dark:bg-gray-800/75 rounded-3xl p-8 mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    我的兴趣
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center p-6 bg-white/50 dark:bg-gray-700/50 rounded-2xl card-hover">
+                        <i class="fas fa-utensils text-4xl text-orange-500 mb-4"></i>
+                        <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">美食研究</h4>
+                        <p class="text-gray-600 dark:text-gray-300">探索各地美食，享受烹饪的乐趣</p>
+                    </div>
+                    <div class="text-center p-6 bg-white/50 dark:bg-gray-700/50 rounded-2xl card-hover">
+                        <i class="fas fa-plane text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">旅行探索</h4>
+                        <p class="text-gray-600 dark:text-gray-300">发现世界的美好，记录每一个精彩瞬间</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 行动号召区域 -->
+            <div class="glass-effect dark:bg-gray-800/75 rounded-3xl p-12 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-6">
+                    添加 WhatsApp 和我联系吧
+                </h2>
+                <p class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                    如果你也在寻找这样一种真挚的连接,让我们在这个喧嚣的世界中找到彼此，共同书写属于我们的故事
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button onclick="opensite()" class="btn-gradient text-white px-10 py-4 rounded-full font-semibold text-xl shadow-lg">
+                        <i class="fab fa-whatsapp mr-3"></i>
+                        开始聊天
+                    </button>
+                    <button onclick="opensite()" class="btn-breathe bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-full font-semibold text-xl shadow-lg transition-all duration-300 hover:transform hover:translateY(-2px)">
+                        <i class="fas fa-heart mr-3"></i>
+                        了解更多
+                    </button>
+                </div>
+                
+                <div class="mt-8 flex justify-center space-x-4">
+                    <button onclick="opensite()" class="btn-breathe bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 px-6 py-3 rounded-full hover:bg-green-200 dark:hover:bg-green-800 transition-all duration-300">
+                        即时回复
+                    </button>
+                    <button onclick="opensite()" class="btn-breathe bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition-all duration-300">
+                        真诚交友
+                    </button>
+                    <button onclick="opensite()" class="btn-breathe bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-400 px-6 py-3 rounded-full hover:bg-pink-200 dark:hover:bg-pink-800 transition-all duration-300">
+                        寻找真爱
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 深色模式检测
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // WhatsApp 跳转函数
+        function opensite() {
+            // 替换为实际的 WhatsApp 链接
+            const whatsappUrl = 'https://wa.me/85259354928?text=你好，我看到了你的交友信息，想要了解更多';
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // 添加滚动效果
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < window.innerHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // 初始化动画
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'all 0.6s ease';
+                card.style.transitionDelay = `${index * 0.1}s`;
+            });
+            
+            // 触发动画
+            setTimeout(() => {
+                cards.forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
